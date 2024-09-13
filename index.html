@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Cine Pilarense</title>
+</head>
+<body>
+    
+<body>
+    <header>
+      <nav>
+        <div class="social-icons header-social-icons">
+          <a href="https://www.facebook.com/westsidecineplex" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/westsidecineplex" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/westsidecineplex" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+       <img src="./images/logomarca/logocine.png" alt="logomarca cine" width="100">
+        <ul class="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#movies">Sessões</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#booking">Notícias</a></li>
+          <li><a href="#booking" class="scheduling-btn">Agendamento</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-carousel" id="heroCarousel">
+          <img src="./images/carrousel/fachadacine.jpg" alt="Cinema interior with red seats" class="active">
+          <img src="./images/carrousel/internacinema.jpg" alt="Modern cinema lobby">
+          <img src="./images/carrousel/filacinema.jpg" alt="Cinema screen with audience">
+          <img src="./images//carrousel/cinepilar.jpg" alt="Popcorn and movie tickets">
+        </div>
+        <div class="hero-nav" id="heroNav"></div>
+        <div class="hero-content">
+          <h1>Conheça o Cine Pilarense</h1>
+        </div>
+      </section>
+  
+      <section id="featured-movies" class="featured-movies">
+        <div class="featured-movie">
+          <img src="./images/filmes/deadpoolwolverine.jpg" alt="Friday - Adult Movie">
+          <div class="movie-overlay">
+            <h3>Sexta - Filme 16+</h3>
+            <button class="schedule-btn" data-movie="Friday">Agendar Sessão</button>
+          </div>
+        </div>
+        <div class="featured-movie">
+          <img src="./images/filmes/divertidamentemobile.jpeg" alt="Sunday - Children's Movie">
+          <div class="movie-overlay">
+            <h3>Domingo - Infantil</h3>
+            <button class="schedule-btn" data-movie="Sunday">Agendar Sessão</button>
+          </div>
+        </div>
+      </section>
+  
+      <section id="news" class="news-section">
+        <h2>Eventos</h2>
+        <div class="news-container">
+          <div class="news-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ylHsl4UL4bU?si=oliikx2Y8mXFbFQu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Cine Pilarense reaberto</h3>
+            <p>Foi reaberto em 2020. A cerimônia estava prevista para o aniversário de emancipação política da cidade, no mês de março de 2020, mas o evento foi adiado pela chegada da pandemia, sendo restrita apenas para autoridades e pessoas envolvidas na reforma e transmitida para população pelas redes sociais. 
+
+            O monumento passou a sediar reuniões municipais até que, por meio de um decreto municipal, pôde realizar a sua primeira sessão depois de quase trinta anos. Na época o Governo do Estado de Alagoas proibia a abertura de cinemas e outros meios culturais com o objetivo de conter o avanço da pandemia. 
+              </p>
+          </div>
+          <div class="news-item">
+            <img src="./images/eventos/assistenciasocial.jpg" alt="eventos">
+            <h3>Evento Assistência Social</h3>
+            <p>O CINE PILARENSE abriu suas portas para a Assistência Social da Prefeitura de Pilar para pagamento de água e luz de muitas famílias.</p>
+          </div>
+          <div class="news-item">
+            <img src="./images/eventos/eventoescritores.jpg" alt="eventos">
+            <h3>13º Encontro dos Escritores Alagoanos</h3>
+            <p>Encontro dos Escritores Alagoano que o Pilar sedia pelo 13º ano consecutivo, reunindo escritores de diversas cidades, academias de letras e grupos literários.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="movies" class="now-showing">
+        <h2 class="section-title">Próximos filmes</h2>
+        <div class="movie-grid" id="movieGrid"></div>
+      </section>
+  
+      <section id="gallery" class="photo-gallery">
+        <h2>Galeria de fotos</h2>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </section>
+  
+      <section id="how-it-works" class="rules-info">
+        <h2 class="section-title">How It Works</h2>
+        <div class="rules-grid">
+          <div class="rule-item">
+            <i class="fas fa-ticket-alt"></i>
+            <h3>1. Choose Your Movie</h3>
+            <p>Browse our selection of latest releases and timeless classics.</p>
+          </div>
+          <div class="rule-item">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>2. Select Date & Time</h3>
+            <p>Pick a convenient showtime from our schedule.</p>
+          </div>
+          <div class="rule-item">
+            <i class="fas fa-couch"></i>
+            <h3>3. Reserve Your Seats</h3>
+            <p>Choose your preferred seats in our state-of-the-art theaters.</p>
+          </div>
+          <div class="rule-item">
+            <i class="fas fa-credit-card"></i>
+            <h3>4. Complete Payment</h3>
+            <p>Securely pay online or at the box office.</p>
+          </div>
+          <div class="rule-item">
+            <i class="fas fa-film"></i>
+            <h3>5. Enjoy the Show</h3>
+            <p>Arrive, present your ticket, and immerse yourself in cinema magic!</p>
+          </div>
+        </div>
+      </section>
+  
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <p id="modalDescription"></p>
+      </div>
+  
+      <section id="booking" class="booking-form">
+        <h2>Agendamento</h2>
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="name">Nome completo:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Whatsapp:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="responsible">Responsavel se menor que 18:</label>
+            <input type="text" id="responsible" name="responsible" required>
+          </div>
+          <div class="form-group">
+            <label for="movie">Escolha o filme:</label>
+            <select id="movie" name="movie" required></select>
+          </div>
+          <div class="form-group">
+            <button type="submit">Agendar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Informações</h3>
+          <p>Westside Cineplex is your premier destination for the latest blockbusters and timeless classics. We offer state-of-the-art projection and sound systems for the ultimate movie experience.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Endereço</h3>
+          <p>123 Cinema Street, Movie Town</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: info@westsidecineplex.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Siga nossas redes</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/westsidecineplex" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/westsidecineplex" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/westsidecineplex" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
