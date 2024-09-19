@@ -128,16 +128,17 @@
   }
 
   .hero-content {
-    position: relative;
-    z-index: 1;
+    bottom: 10%;
+    position: absolute;
+    z-index: 2;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
-    border-radius: 10px;
+    background-color: rgba(219, 16, 16, 0.856);
+    padding: .5rem;
+    border-radius: 1px;
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
   }
