@@ -386,12 +386,24 @@
     color: var(--accent-color);
   }
 
-  /* Featured movies styles */
+  /* sessão filmes da semana */
+
+  .films-of-week {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+  }
+  
   .featured-movies {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
     background-color: var(--primary-color);
+    
   }
 
   .featured-movie {
@@ -411,6 +423,7 @@
   .featured-movie:hover img {
     transform: scale(1.05);
   }
+
 
   .movie-overlay {
     position: absolute;
@@ -441,7 +454,7 @@
     background-color: #c4070f;
   }
 
-  /* News section styles */
+  /* sessão eventos */
   .news-section {
     padding: 2rem;
     background-color: var(--primary-color);
