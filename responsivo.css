@@ -1,0 +1,29 @@
+@media screen and (max-width: 900px) {
+    header .header-social-icons {
+        display: none;
+               
+    }
+
+    .hero-carousel{
+        max-width: 900px;
+    }
+
+ 
+
+}
+
+@media screen and (max-width: 878px) {
+    header .nav-links, .logo {
+        font-size: .7rem;
+       
+        
+    }
+
+    .scheduling-btn{
+       display: none;
+        
+    }
+     
+ 
+
+}
